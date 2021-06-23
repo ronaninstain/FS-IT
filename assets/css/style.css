@@ -243,4 +243,56 @@ a{
     bottom: 0;
 }
 
+                /* Skill CSS */
+                
+       .skill-area{
+           color: #fff;
+       }
+       .skill-accordion .accordion-button {
+        background-color: #635CDB;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 0 !important;
+        }
+        .skill-accordion .accordion-body {
+        background-color: #fff;
+        color: #333;
+        }
+        .skill-accordion .accordion-button:focus {
+        border: 0;
+        box-shadow: none;
+        } 
+        .skill-title {
+            text-transform: capitalize;
+            font-size: 22px;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 12px;
+            }
+            .skill-title h4::before {
+            height: 2px;
+            position: absolute;
+            content: "";
+            width: 36px;
+            height: 2px;
+            background-color: #635CDB;
+            bottom: 0;
+            }
+            .single-progress h4 {
+                text-transform: capitalize;
+                font-size: 20px;
+                margin-bottom: 10px;
+                }
+                .single-progress {
+                margin-bottom: 25px;
+                }
+                .single-progress .progress .progress-bar {
+                background-color: #635CDB;
+                }
+                .single-progress .progress {
+                height: 25px;
+                }
+
+
     
