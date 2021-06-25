@@ -327,3 +327,38 @@ a{
 .single-service:hover i{
     border-radius: 0;
 }
+
+/* Counter CSS */
+
+.counter-area .col-xxl-3:nth-child(2n) .single-counter {
+    background-color: #24283f;
+}
+.single-counter {
+    background-color: #292e47;
+    color: #fff;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.single-counter i {
+    font-size: 20px;
+    background-color: #635CDB;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.single-counter h4 span {
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.single-counter h4 {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+}
