@@ -431,3 +431,37 @@ a{
    text-align: center;
 }
 
+/* Testimonials CSS */
+
+.testimonials-area .section-title {
+    color: #fff;
+}
+.single-testimonial h4 {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.single-testimonial h4 span {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+.single-testimonial img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+    border: 2px solid #ddd;
+    padding: 5px;
+}
+.single-testimonial {
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+    padding: 30px;
+    overflow: inherit;
+}
+.owl-item.active.center .single-testimonial {
+    background-color: #635CDB;
+}
