@@ -20,3 +20,14 @@ $(document).ready(function(){
     $('.counter').counterUp();
 
   });
+
+  $(window).load(function(){
+      $(this).on('scroll',function(){
+          if($(this).scrollTop() > 50){
+              $('.header-area').addClass('sticky');
+          }
+          else{
+              $('.header-area').removeClass('sticky');
+          }
+      })
+  })

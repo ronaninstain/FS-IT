@@ -133,6 +133,86 @@ a{
         color: #333;
         font-weight: 500;
 }
+.navbar-nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navbar-nav ul li {
+    position: relative;
+}
+.navbar-nav ul li ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    z-index: 9;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    transform: scaleY(0);
+    transform-origin: 0 0 0;
+    padding: 10px 0;
+}
+.navbar-nav ul li.caret:after {
+    content: "\f107";
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    right: 2px;
+    top: 21px;
+    font-size: 13px;
+}
+.navbar-nav ul li:hover ul {
+    opacity:1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.navbar-nav ul li ul li {
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.navbar-nav ul li ul li:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+.navbar-nav ul li ul li a {
+    display: block;
+    padding: 0 15px;
+    font-size: 15px;
+}
+.navbar {
+    padding: 0;
+}
+.navbar-nav ul li a.nav-link {
+    padding: 20px 15px !important;
+    display: block;
+}
+.header-area.sticky {
+    position: fixed;
+    background-color: #fff;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-bottom: 1px solid #b6adad;
+    transition: .3s;
+}
+.header-area.sticky .navbar-brand {
+    font-size: 20px;
+}
+.header-area.sticky .nav-link {
+    font-size: 14px;
+    transition: .3s;
+}
 
 /* Slider Area CSS */
 
@@ -486,4 +566,125 @@ a{
     margin: 15px 0;
     border-top: 1px dashed #ddd;
     padding-top: 15px;
+}
+
+/* CTA CSS */
+.cta-area {
+    position: relative;
+    padding: 40px 0;
+    color: #fff;
+    z-index: 2;
+}
+.cta-area:before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: #292e47;
+    z-index: -1;
+    left: 0;
+    top: 0;  
+}
+.cta-area:after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: #24283f;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.cta-area p {
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+.cta-area h4 {
+    text-transform: capitalize;
+    font-size: 26px;
+}
+
+/* Footer CSS */
+.footer-area.bg::before {
+    opacity: 1;
+}
+.footer-area {
+    padding: 60px 0;
+    color: #fff;
+}
+.single-footer h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    margin-top: 36px;
+}
+.single-footer p {
+    text-align: center;
+}
+.single-footer h4 {
+    text-transform: capitalize;
+    font-size: 20 px;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+.single-footer h4:before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #635CDB;
+    bottom: 0;
+    left: 0;
+}
+.single-footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.single-footer ul li a {
+    color: #fff;
+}
+.single-footer ul li {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.row.footer-bottom {
+    border-top: 1px solid #999;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+.footer-social a {
+    color: #fff;
+    margin-left: 10px;
+}
+
+/* Breadcumb CSS */
+
+.breadcumb-area {
+    background-color: #635CDB;
+    padding: 60px 0;
+}
+.breadcumb-area h4 {
+    margin-bottom: 0;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 40px;
+}
+.breadcumb-area ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+    color: #fff;
+}
+.breadcumb-area ul li {
+    margin: 0 5px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.breadcumb-area ul li a {
+    color: #fff;
 }
