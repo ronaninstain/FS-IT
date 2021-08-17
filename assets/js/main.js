@@ -10,12 +10,24 @@ $(document).ready(function(){
 
      /* testimonials active */
 
-    $(".testimonial").owlCarousel({
+    $(".testimonials").owlCarousel({
         'items': 3,
         'loop': true,
         'autoplay': true,
         'margin' : 30,
-        'center' : true
+        'center' : true,
+        responsive:{
+            0:{
+                items:1
+            },
+            750:{
+                items:2,
+                center: false
+            },
+            1000:{
+                items:3
+            }
+        }
     });
 
 
@@ -61,5 +73,19 @@ $(document).ready(function(){
           else{
             $('.header-area').removeClass('sticky');
           }
-      })
+      });
   });
+
+  /* $(window).scroll(function(){
+      if($(this).scrollTop()>200){
+          $('#scroll').addClass('scroll-show');
+      }else {
+          $('#scroll').removeClass('scroll-show');
+      }
+  })
+
+  $('#scroll').click(function(){
+      $('html,body').animate({
+          scrollTop: 0
+      },500)
+  }); */
