@@ -61,7 +61,5 @@
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px)*/
 @media (max-width: 1399.98px) {
-    .section-title:after {
-        bottom: 5px;
-    }
+    
 }
